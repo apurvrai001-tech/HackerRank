@@ -1,0 +1,32 @@
+/*Write a C program that takes a single lowercase English letter as input and prints its corresponding uppercase letter.
+
+Use the ASCII value method to perform the conversion.
+
+Input Format
+
+A single lowercase character charLower.
+
+Constraints
+
+Input must be a lowercase English alphabet ('a' to 'z').
+Do not use built-in string or character functions like toupper() or strupr().
+Conversion must be done using ASCII value arithmetic.
+Output Format
+
+A single line in the format:
+
+The uppercase of {charLower} is {charUpper}*/
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    char a, b;
+    scanf("%c", &a);
+    b = a - 32;
+    printf("The uppercase of %c is %c", a, b);
+    return 0;
+}
